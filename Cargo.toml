@@ -1,0 +1,14 @@
+[package]
+name = "bevy-water-melon"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy_rapier2d = "0.22.0"
+bevy = { version = "0.11", default-features = false, features = [ "bevy_asset", "bevy_scene", "bevy_core_pipeline", "bevy_sprite", "bevy_gizmos", "x11" ] }
+rapier2d = {  version = "0.17.2", features = ["debug-render"] }
+approx = "0.5.1"
+glam = { version = "0.24", features = [ "approx" ] }
+nalgebra = { version = "0.32.3", features = [ "convert-glam024" ] }
